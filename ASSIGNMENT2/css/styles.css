@@ -224,12 +224,29 @@ footer p {
 
 @media (max-width: 768px) {
   body {
-    width: 400px;
+    width: 100%;
   }
-
+  .navMenu {
+    padding-left: 50%;
+  }
   .mainContainer {
     align-items: center;
     margin: 74px;
     flex-direction: column-reverse;
+  }
+  .cards {
+    flex-direction: column;
+    padding-left: 0;
+    gap: 30px;
+  }
+  .cardItem {
+    width: 100%;
+  }
+  .workContainer {
+    margin: 20px;
+  }
+  .workCard {
+    flex-direction: column;
+    gap: 15px;
   }
 }
