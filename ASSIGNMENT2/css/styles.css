@@ -3,230 +3,317 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Heebo", sans-serif;
 }
-
-.navMenu {
-  display: flex;
-  justify-content: flex-end;
+ul {
+  list-style-type: none;
 }
-
 a {
-  font-size: 21px;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
 }
-
-a:hover {
-  box-shadow: 0 0 5px 3px red;
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px;
 }
-
-.navBar {
+.header {
+  margin: 50px auto;
   display: flex;
-  padding-top: 20px;
-  align-items: center;
   justify-content: space-between;
-  padding-right: 144px;
-  padding-left: 144px;
 }
 
-.navItems {
+.navList {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.navList a {
+  font-weight: 500;
   font-size: 20px;
-  list-style: none;
-  display: flex;
-  gap: 33px;
-  align-items: center;
-  line-height: 30px;
+  line-height: 29.38px;
+  color: #000000;
 }
 
-.mainContainer {
+.navList a:hover {
+  color: #c52d2d;
+}
+
+.imgSection {
+  min-width: 246px;
+}
+.imgSection img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.logo a {
+  font-size: 20px;
+  line-height: 29.38px;
+  color: #000000;
+}
+
+.hero {
   display: flex;
+  min-height: 100vh;
+  gap: 30px;
   justify-content: space-between;
-  margin: 250px auto;
-  padding-left: 140px;
-  padding-right: 140px;
+  align-items: center;
 }
 
-.firstItem {
+.heroContent h1 {
   font-size: 44px;
-  font-weight: bold;
   line-height: 60px;
+  color: #21243d;
+  margin-bottom: 60px;
 }
 
-.secondItem {
-  width: 60%;
-  padding-top: 40px;
+.heroContent p {
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #21243d;
-  padding-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-.btn {
+.heroContent button {
   background-color: #ff6464;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 2px;
+  line-height: 29px;
   border: none;
-  border-radius: 4px;
+  padding: 10px;
+}
+
+.heroContent button:hover {
+  background-color: #b34040;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-weight: 300;
 }
 
-.btn:hover {
-  background-color: #c52d2d;
-}
-
-.imgContainer {
-  width: 400px;
-}
-
-.profilePic {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 50%;
-  box-shadow: -6px 4px 2px #edf7fa;
-}
-
-.postContainer {
-  padding-right: 0px;
-  padding-left: 0px;
+.contentSection {
   background-color: #edf7fa;
-  padding: 40px 5%;
+  padding: 25px;
 }
 
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.cardItem {
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  flex: 1;
-}
-
-.cardItem:hover {
-  border: 2px solid#142850;
-}
-
-.postItems {
+.postHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 21px;
-  margin-bottom: 20px;
-  list-style-type: none;
 }
 
-.viewAll {
+.postHeader .recentPost {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243d;
+  height: 60px;
+}
+
+.postHeader .viewAll {
+  height: 60px;
   text-decoration: underline;
-  color: #00a8cc;
-  font-size: 20px;
 }
 
-.cardTitle {
-  font-size: 23px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.dateCategory {
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 10px;
-}
-
-.cardInfo {
-  font-size: 16px;
-  color: #555;
-}
-
-.workContainer {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 30px;
-}
-
-.workContainerTitle {
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-
-.workCard {
+.allPosts {
   display: flex;
   gap: 20px;
-  align-items: center;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 20px 0;
 }
 
-.img2 {
-  width: 100%;
-  max-width: 240px;
-  border-radius: 6px;
+.allPosts .postCard {
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px 0px #bbe1fa40;
+  padding: 24px;
 }
 
-.categoryItem {
+.allPosts .postCard h2 {
+  font-size: 26px;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+
+.allPosts .postCard .postDate {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #21243d;
+  margin-bottom: 20px;
+}
+
+.allPosts .postCard .postInfo {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #21243d;
+}
+
+.thirdSection {
+  margin-bottom: 83px;
+}
+
+.thirdSection .featuredWork {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243d;
+  margin-bottom: 18px;
+}
+
+.workCards {
   display: flex;
-  gap: 10px;
-  align-items: center;
-  list-style: none;
+  gap: 34px;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 30px;
 }
 
-.item1 {
-  background-color: #142850;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 900;
-  text-align: center;
-  padding: 5px 10px;
-  border-radius: 15px;
+.workCards .card h1 {
+  font-weight: 700px;
+  font-size: 30px;
+  line-height: 44px;
+  margin-bottom: 16px;
 }
 
-.item2 {
-  font-size: 16px;
+.workCards .yearSpan {
+  display: flex;
+  gap: 36px;
+  margin-bottom: 17px;
+  align-content: center;
+}
+
+.workCards .yearSpan span {
+  width: 374px;
+  height: 34px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
   color: #8695a4;
 }
 
-.workCardHeading {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.thirdSection .year {
+  width: 62px;
+  height: 25px;
+  background-color: #142850;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 12px;
 }
 
-.workCardInfo {
+.card p {
+  font-weight: 400px;
   font-size: 16px;
-  color: #555;
-  margin-top: 10px;
+  line-height: 23px;
+  color: #21243d;
+  margin-bottom: 20px;
+}
+
+.workImages img {
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
 }
 
 footer {
-  padding: 40px 0;
-  text-align: center;
+  padding-bottom: 54px;
 }
 
-.footer {
+.footerIcons {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
-  list-style-type: none;
+  flex-direction: column;
   align-items: center;
 }
 
-.footer img {
-  width: 30px;
+.icons {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 26px;
 }
 
-.cpyRight {
-  font-size: 16px;
-  color: #777;
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .header {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 34px;
+    height: calc(100vh - 100px);
+  }
+  .imgSection {
+    order: -1;
+  }
+  .imgSection img {
+    width: 170px;
+  }
+  .heroContent h1 {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 21px;
+  }
+  .heroContent p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+  .heroContent button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+  }
+  .heroContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .postHeader .viewAll {
+    display: none;
+  }
+  .allPosts {
+    display: flex;
+    flex-direction: column;
+  }
+  .workCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .postSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .workImages {
+    width: 100%;
+  }
+  .featuredWork {
+    text-align: center;
+    font-size: 18px;
+  }
+  .workImages img {
+    width: 100%;
+    height: 100%;
+  }
+  .card .yearSpan .span {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .footerIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
