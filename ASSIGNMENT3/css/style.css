@@ -458,22 +458,42 @@ footer ul {
 /* Responsive Styles for 768px breakpoint */
 @media (max-width: 768px) {
   .navBar .container {
-    align-items: center;
-    text-align: center;
+    display: none;
+  }
+
+  .firstBanner {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .secondBanner {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .thirdBanner {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .fourthBanner {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  footer {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .firstBanner .container {
-    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .firstBanner .sectionContent h1 {
-    font-size: 36px;
-    line-height: 50px;
+    font-size: 72px;
+    line-height: 100px;
     padding-bottom: 16px;
-  }
-
-  .sectionContent {
-    margin-top: 250px;
   }
 
   .firstBanner .sectionContent p {
@@ -509,10 +529,10 @@ footer ul {
     margin: 0 auto;
   }
 
-  .form input,
-  .form textarea,
-  .form a {
-    min-width: 100%;
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
   }
 
   footer .container {
@@ -522,6 +542,7 @@ footer ul {
   }
 
   footer ul {
+    justify-content: center;
     gap: 8px;
   }
 
