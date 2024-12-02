@@ -461,6 +461,10 @@ footer ul {
     display: none;
   }
 
+  .navBar ul li a:hover {
+    color: #6c00ff;
+  }
+
   .firstBanner {
     padding-left: 100px;
     padding-right: 100px;
@@ -478,6 +482,10 @@ footer ul {
   .fourthBanner {
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .firstBanner .sectionContent .watchNow:hover {
+    background-color: blue;
   }
 
   footer {
@@ -535,6 +543,14 @@ footer ul {
     gap: 72px;
   }
 
+  .form a:hover {
+    background-color: blue;
+  }
+
+  .contactInfo {
+    justify-content: center;
+  }
+
   footer .container {
     flex-direction: column;
     align-items: center;
@@ -549,5 +565,9 @@ footer ul {
   footer .footerLogo,
   footer .cpyRight {
     text-align: center;
+  }
+
+  .footerOptions ul li a:hover {
+    color: #6c00ff;
   }
 }
