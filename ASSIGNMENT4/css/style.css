@@ -1,0 +1,676 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  max-width: 1185px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.logo {
+  max-height: 42px;
+  max-width: 193px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  align-items: center;
+}
+
+.navMenu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+}
+
+.lang select {
+  font-size: 16px;
+  line-height: 22px;
+  border: #fff;
+  background-color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navBtns {
+  height: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.navBtns button {
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 14px 24px;
+  font-weight: 400px;
+  border-radius: 5px;
+}
+
+.loginBtn {
+  align-items: center;
+  background-color: #fff;
+}
+
+.signUpBtn {
+  color: #fff;
+  background-color: #141414;
+}
+
+.Banner {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  height: calc(100vh-56px);
+}
+
+.leftBanner {
+  padding-top: 207px;
+  padding-left: 218px;
+  position: absolute;
+  width: 52%;
+  height: 100vh;
+  background: linear-gradient(
+    89.61deg,
+    #422a3c 55.75%,
+    rgba(66, 42, 60, 0.85) 66.03%,
+    rgba(66, 42, 60, 0.8) 75.96%,
+    rgba(66, 42, 60, 0.31) 84.81%,
+    rgba(66, 42, 60, 0) 99.7%
+  );
+}
+
+.rightBanner {
+  height: 100%;
+
+  background-image: url("../images/bgImg.png");
+
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+
+  background-position: right;
+}
+.firstContent {
+  display: flex;
+
+  gap: 9px;
+  align-items: center;
+}
+
+.Container {
+  margin: auto;
+  min-width: 949px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 66px;
+}
+
+.logoContent {
+  max-width: 22px;
+  max-height: 25px;
+}
+
+.logoContent img {
+  height: 100%;
+  width: 100%;
+}
+
+.firstContent p {
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 23px;
+}
+
+.subContainer {
+  max-width: 510px;
+}
+
+.Container h1 {
+  font-family: "Playfair Display";
+  font-size: 70px;
+  line-height: 90px;
+  font-weight: 700px;
+  margin-bottom: 24px;
+}
+
+.Container p {
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 400px;
+}
+
+.serviceName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 307px;
+  min-height: 88px;
+  gap: 14px;
+}
+
+input {
+  background-image: url("../images/inputLogos/search.png");
+  background-size: 16px;
+  background-position: right;
+  background-repeat: no-repeat;
+  min-height: 24px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.address input {
+  background-image: url("../images/inputLogos/loaction.png");
+  background-size: 16px;
+  background-position: right;
+  background-repeat: no-repeat;
+  min-height: 24px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.subForm {
+  display: flex;
+  gap: 24px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 67px;
+
+  padding: 20px 14px 20px 40px;
+}
+.serviceName label {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ba7894;
+}
+
+form button {
+  min-width: 212px;
+  min-height: 66px;
+  border-radius: 56px;
+  margin-right: 14px;
+  background-color: #ba7894;
+  font-size: 24px;
+  color: #fff;
+  line-height: 33px;
+  font-weight: 600px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+form button img {
+  max-width: 26px;
+  max-height: 26px;
+}
+
+.secondBanner {
+  padding-top: 70px;
+  padding-left: 41px;
+  padding-bottom: 51px;
+}
+
+.secondBannerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+.arrowImg {
+  flex-shrink: 0;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.arrowImg:hover {
+  transform: scale(1.1);
+}
+
+.arrowImg img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slider {
+  flex-grow: 1;
+  display: flex;
+  gap: 15px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.sliderCard {
+  min-width: 200px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.cardImg {
+  max-height: 120px;
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+.cardImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardTitle {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #333;
+}
+
+.thirdBanner {
+  padding-top: 70px;
+  padding-left: 41px;
+  padding-bottom: 51px;
+}
+
+.thirdBanner .content h3 {
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 600px;
+  letter-spacing: 3px;
+  color: #ba7894;
+}
+
+.thirdBanner .content h1 {
+  font-size: 45px;
+  line-height: 44px;
+  align-content: center;
+  font-family: "Playfair Display";
+  margin-bottom: 16px;
+}
+
+.thirdBanner .content p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400px;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 69px;
+}
+
+.starImg {
+  height: 24px;
+  width: 24px;
+}
+
+.starImg img {
+  height: 100%;
+  width: 100%;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.serviceImg {
+  max-width: 384px;
+  max-height: 275px;
+}
+.serviceImg img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.serviceCardContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.nameLoc {
+  max-width: 337px;
+  max-height: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceCardInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.salonName h2 {
+  display: flex;
+  justify-content: start;
+}
+
+.locationImg {
+  display: flex;
+  align-content: center;
+  height: 18px;
+  width: 18px;
+}
+
+.locationImg img {
+  height: 100%;
+  width: 100%;
+}
+
+/* .locationImg p {
+  width: auto;
+  min-height: 38px;
+} */
+.serviceCard button {
+  min-height: 53px;
+  color: #ba7894;
+  background-color: #fff;
+  border: 2px solid #ba7894;
+  border-radius: 8px;
+}
+
+.serviceCard {
+  max-width: 364px;
+  min-height: 536px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  border: 2px solid #0000003d;
+  border-radius: 24px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+  padding: 24px;
+}
+
+.reviews {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.serviceCards {
+  display: flex;
+  gap: 24px;
+}
+
+.commentWrapper h2 {
+  line-height: 58px;
+  color: #141414;
+  margin-bottom: 67px;
+}
+.commentWrapper {
+  padding: 44px 0;
+}
+
+.comment {
+  background-color: #422a3c;
+
+  border-radius: 40px;
+  margin-bottom: 56px;
+}
+
+.commentInfo {
+  display: flex;
+  gap: 64px;
+  padding: 0 32px;
+  justify-content: center;
+
+  align-items: center;
+}
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #edfff0;
+}
+
+.commentSection {
+  background: linear-gradient(128.1deg, #fdfdfd 5.48%, #f0f0f0 89.93%);
+}
+
+.commentInfo {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.loc {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.title {
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+  color: #edfff0;
+  margin-bottom: 12px;
+}
+.titleInfo {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.quote2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quote1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.quote1 img {
+  height: 40px;
+  width: 45px;
+}
+
+.quote2 img {
+  height: 40px;
+  width: 45px;
+}
+
+.rightC {
+  background-color: #422a3c;
+  border: none;
+  border-radius: 120px;
+}
+
+.rightC img {
+  width: 100%;
+  height: 100%;
+}
+
+.leftC {
+  border: none;
+  border-radius: 120px;
+}
+
+.commentWrapper h2 {
+  font-size: 45px;
+  line-height: 44px;
+  align-content: center;
+  font-family: "Playfair Display";
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.commentInfo img {
+  max-height: 496px;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 600px;
+  letter-spacing: 3px;
+  color: #ba7894;
+  text-align: center;
+}
+
+.footerBg {
+  background-color: #241520;
+}
+.copyrightBg {
+  background-color: #160813;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 52px;
+  margin-bottom: 52px;
+  padding-right: 52px;
+}
+
+.logos img {
+  max-width: 246px;
+  max-height: 50px;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.footerInfos {
+  display: flex;
+  /* gap: 129px; */
+  justify-content: space-between;
+  margin-bottom: 72px;
+}
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.copyright {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footerInfos h2 {
+  font-family: Playfair Display;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+.footerInfos ul li {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.address {
+  display: flex;
+  gap: 14px;
+}
+.mail {
+  display: flex;
+  gap: 42px;
+}
+.phone {
+  display: flex;
+  gap: 29px;
+}
+.footerWrapper {
+  padding: 70px 0;
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 250px;
+  }
+
+  .secondBannerContent {
+    gap: 10px;
+  }
+
+  .sliderCard {
+    min-width: 150px;
+  }
+
+  .arrowImg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .cardImg {
+    max-height: 100px;
+    max-width: 140px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+}
